@@ -1,12 +1,13 @@
 package main
 
 import (
+	"ddns-webhook-go/internal/config"
+	"ddns-webhook-go/internal/database"
+	"ddns-webhook-go/internal/logger"
+	"ddns-webhook-go/internal/routes"
 	"github.com/bytedance/sonic"
 	"github.com/gofiber/fiber/v2"
 	"github.com/spf13/viper"
-	"gofiber-template/internal/config"
-	"gofiber-template/internal/database"
-	"gofiber-template/internal/logger"
 )
 
 func init() {
@@ -23,7 +24,11 @@ func main() {
 	}
 
 	app := fiber.New(fiberConfig)
+
+	routes.RegisterWebhookRoute(app)
+
 	if err := app.Listen(viper.GetString("app.addr")); err != nil {
 		logger.Logger.Sugar().Fatalf("app failed to start: %v", err)
 	}
+
 }

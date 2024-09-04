@@ -1,8 +1,8 @@
 package database
 
 import (
+	"ddns-webhook-go/internal/logger"
 	"github.com/yxlimo/xormzap"
-	"gofiber-template/internal/logger"
 	"xorm.io/xorm"
 )
 import _ "github.com/mattn/go-sqlite3"

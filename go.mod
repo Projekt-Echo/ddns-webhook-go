@@ -1,4 +1,4 @@
-module gofiber-template
+module ddns-webhook-go
 
 go 1.22
 

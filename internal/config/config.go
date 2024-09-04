@@ -1,8 +1,8 @@
 package config
 
 import (
+	"ddns-webhook-go/internal/logger"
 	"github.com/spf13/viper"
-	"gofiber-template/internal/logger"
 )
 
 func LoadConfig() {
