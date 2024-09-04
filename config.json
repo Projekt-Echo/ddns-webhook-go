@@ -1,0 +1,11 @@
+{
+  "app" : {
+    "name" : "gofiber-template",
+    "addr" : "0.0.0.0:33965",
+    "prefork" : false
+  },
+  "database": {
+    "dialect" :"sqlite3",
+    "file":"data.db"
+  }
+}

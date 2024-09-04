@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="com.obiscr.chatgpt.settings.EasyCodeState">
+    <option name="projectFiles" value="$PROJECT_DIR$/app/main.go;C:/Files/Projekts/gofiber-template/internal/config/config.go;C:/Files/Projekts/gofiber-template/internal/database/db.go;C:/Files/Projekts/gofiber-template/internal/logger/logger.go;C:/Files/Projekts/gofiber-template/config.json" />
+  </component>
+</project>
